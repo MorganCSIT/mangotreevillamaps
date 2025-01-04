@@ -10,6 +10,10 @@ const Header = () => {
     setIsMobileMenuOpen(false);
   }, []);
 
+  const handleLinkClick = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <nav className="nav-container">
@@ -26,16 +30,32 @@ const Header = () => {
         </button>
 
         <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-          <NavLink to="/map/1" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
+          <NavLink 
+            to="/map/1" 
+            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleLinkClick}
+          >
             Island Map Guide
           </NavLink>
-          <NavLink to="/activities" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
+          <NavLink 
+            to="/activities" 
+            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleLinkClick}
+          >
             Activities
           </NavLink>
-          <NavLink to="/taxi-service" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
+          <NavLink 
+            to="/taxi-service" 
+            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleLinkClick}
+          >
             Transport
           </NavLink>
-          <NavLink to="/faq" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}>
+          <NavLink 
+            to="/faq" 
+            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+            onClick={handleLinkClick}
+          >
             FAQ
           </NavLink>
         </div>

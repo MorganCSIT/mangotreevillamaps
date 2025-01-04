@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaMapMarkedAlt, FaWater, FaCloudRain, FaCompass, FaQuestionCircle } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaWater, FaCloudRain, FaCompass, FaQuestionCircle, FaTaxi } from 'react-icons/fa';
 import './EssentialInfo.css';
 
 const EssentialInfo = () => {
@@ -9,6 +9,12 @@ const EssentialInfo = () => {
       title: "Island Map Guide",
       description: "A list of categorized maps of Phuket.",
       url: "/map/1"
+    },
+    {
+      icon: <FaTaxi />,
+      title: "Transport Service",
+      description: "Book reliable transportation with our trusted local driver.",
+      url: "/taxi-service"
     },
     {
       icon: <FaWater />,

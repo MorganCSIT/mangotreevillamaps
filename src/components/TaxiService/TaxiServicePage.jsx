@@ -1,22 +1,39 @@
-import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';
-import TaxiNavigation from './TaxiNavigation';
+import React, { useState } from 'react';
 import TaxiBookingForm from './TaxiBookingForm';
-import TaxiServiceInfo from './TaxiServiceInfo';
-import TaxiRates from './TaxiRates';
+import RatesModal from './RatesModal';
 import './TaxiService.css';
 
 const TaxiServicePage = () => {
+  const [isRatesModalOpen, setRatesModalOpen] = useState(false);
+
   return (
     <div className="taxi-service-container">
-      <TaxiNavigation />
-      <div className="taxi-service-content">
-        <Routes>
-          <Route path="/info" element={<TaxiServiceInfo />} />
-          <Route path="/book" element={<TaxiBookingForm />} />
-          <Route path="/rates" element={<TaxiRates />} />
-          <Route path="/" element={<Navigate replace to="/taxi-service/info" />} />
-        </Routes>
+      <div className="taxi-content">
+        <section className="taxi-info-section">
+          <h1>Mr. A's Taxi Service</h1>
+          <p className="service-description">
+            Welcome to our trusted taxi service in Phuket. We provide reliable, comfortable 
+            transportation with experienced English-speaking drivers who know the island inside out. 
+            Whether you need an airport transfer, a day tour, or just a quick ride, we're here to 
+            ensure your journey is safe and pleasant.
+          </p>
+          <button 
+            className="view-rates-button"
+            onClick={() => setRatesModalOpen(true)}
+          >
+            View All Rates
+          </button>
+        </section>
+
+        <section className="taxi-booking-section">
+          <h2>Book Your Ride</h2>
+          <TaxiBookingForm />
+        </section>
+
+        <RatesModal 
+          isOpen={isRatesModalOpen} 
+          onClose={() => setRatesModalOpen(false)} 
+        />
       </div>
     </div>
   );

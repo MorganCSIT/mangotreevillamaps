@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const BookingModal = ({ isOpen, onClose, activity }) => {
   const [formData, setFormData] = useState({
-    numPeople: 1,
-    names: [''],
+    numPeople: '',
+    names: [],
     excursionDate: '',
     paymentDateTime: '',
     notes: ''
@@ -55,11 +55,11 @@ ${formData.notes ? `Questions/Notes: ${formData.notes}` : ''}`;
               max="10"
               value={formData.numPeople}
               onChange={e => {
-                const num = parseInt(e.target.value);
+                const num = parseInt(e.target.value) || '';
                 setFormData({
                   ...formData,
                   numPeople: num,
-                  names: Array(num).fill('')
+                  names: num ? Array(num).fill('') : []
                 });
               }}
             />
