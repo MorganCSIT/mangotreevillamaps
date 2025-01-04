@@ -1,74 +1,36 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-  useParams,
-} from "react-router-dom";
-import MapDisplay from "./components/MapDisplay";
-import TagCarousel from "./components/TagCarousel";
-import Article from "./components/Article";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Header from "./components/Header/Header";
+import ScrollToTop from "./components/ScrollToTop";
+import MapRoute from "./components/MapRoute/MapRoute";
+import TaxiServicePage from "./components/TaxiService/TaxiServicePage";
+import BlogList from "./components/Blog/BlogList";
+import BlogPost from "./components/Blog/BlogPost";
+import EssentialInfo from "./components/EssentialInfo/EssentialInfo";
+import FAQ from "./components/FAQ/FAQ";
+import Activities from "./components/Activities/Activities";
 import "./App.css";
-import mapsData from "./mapsData";
-import { HiArrowSmDown, HiArrowSmLeft } from "react-icons/hi"; // Import the left arrow icon
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
-        <Routes>
-          <Route path="/map/:mapId" element={<MapRoute />} />
-          <Route
-            path="*"
-            element={<Navigate replace to={`/map/${mapsData[0].id}`} />}
-          />
-        </Routes>
+        <Header />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Navigate to="/essential-info" replace />} />
+            <Route path="/map/:mapId" element={<MapRoute />} />
+            <Route path="/taxi-service/*" element={<TaxiServicePage />} />
+            <Route path="/blog" element={<BlogList />} />
+            <Route path="/blog/:postId" element={<BlogPost />} />
+            <Route path="/essential-info" element={<EssentialInfo />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/activities" element={<Activities />} />
+          </Routes>
+        </main>
       </div>
     </Router>
-  );
-}
-
-function MapRoute() {
-  const { mapId } = useParams();
-  const mapData = mapsData.find((data) => data.id.toString() === mapId);
-
-  if (!mapData) {
-    return <Navigate replace to="/" />;
-  }
-
-  const selectedOption = [
-    {
-      value: mapId,
-      label: mapData.label, // Ensure this label matches exactly one in the options
-    },
-  ];
-
-  return (
-    <div className="pair-container">
-      <div className="help-arrows">
-        <div className="content-container">
-          <MapDisplay mapUrl={mapData.mapUrl} />
-
-          <TagCarousel
-            options={mapsData.map((map) => ({
-              value: map.id.toString(),
-              label: map.label,
-            }))}
-            selectedValue={selectedOption}
-            onChange={(selectedOptions) => {
-              if (selectedOptions.length > 0) {
-                window.location.href = `/map/${selectedOptions[0].value}`;
-              }
-            }}
-          />
-
-          <Article article={mapData.article} />
-        </div>
-
-        <br></br>
-      </div>
-    </div>
   );
 }
 

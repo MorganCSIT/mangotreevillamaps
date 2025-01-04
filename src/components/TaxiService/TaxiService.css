@@ -1,0 +1,8 @@
+.taxi-service-container {
+  max-width: 1000px; /* Reduced from 1200px */
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 95%;
+}
+
+/* Rest of the TaxiService.css remains the same */

@@ -1,0 +1,118 @@
+/* Blog List Page */
+.blog-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 95%;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-card {
+  background: var(--surface);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-2px);
+}
+
+.blog-image-container {
+  position: relative;
+  padding-top: 56.25%; /* 16:9 aspect ratio */
+  overflow: hidden;
+}
+
+.blog-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 1.25rem;
+}
+
+.blog-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--background);
+  color: var(--primary);
+  border-radius: var(--border-radius);
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.blog-card h2 {
+  font-size: 1.125rem;
+  margin: 0.5rem 0;
+}
+
+.blog-card p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.read-more {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+/* Blog Post Page */
+.blog-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.blog-post-header {
+  margin-bottom: 2rem;
+}
+
+.blog-post-image {
+  width: 100%;
+  max-height: 400px; /* Reduced from unlimited height */
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-meta {
+  text-align: center;
+  max-width: 600px; /* Added max-width for better readability */
+  margin: 0 auto;
+}
+
+.blog-post-info {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+}
+
+.blog-post-content {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 680px; /* Added max-width for better readability */
+  margin: 0 auto;
+}
+
+/* Rest of the CSS remains the same */

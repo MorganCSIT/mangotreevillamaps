@@ -2,18 +2,22 @@ import React from "react";
 
 const MapDisplay = ({ mapUrl }) => {
   return (
-    <div className="map-container" style={{ height: "60vh", width: "100%" }}>
-      <script
-        async
-        defer
-        src="https://maps.googleapis.com/maps/api/js?v=3.53&client=google-maps-pro&language=en&region=TH&libraries=places,visualization,geometry,search&callback=initMap"
-      ></script>
+    <div className="map-container">
       <iframe
         width="100%"
         height="100%"
         loading="lazy"
         allowFullScreen
         src={mapUrl}
+        style={{
+          border: "none",
+          borderRadius: "12px",
+          transition: "opacity 0.3s ease"
+        }}
+        onLoad={(e) => {
+          e.target.style.opacity = 1;
+        }}
+        initial={{ opacity: 0 }}
       ></iframe>
     </div>
   );

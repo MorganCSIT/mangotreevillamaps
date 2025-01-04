@@ -1,0 +1,14 @@
+/* Layout components */
+.container {
+  max-width: 1000px; /* Reduced from 1200px */
+  margin: 0 auto;
+  padding: 0 var(--spacing-3);
+  width: 95%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-3);
+  }
+}

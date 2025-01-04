@@ -1,0 +1,122 @@
+.essential-info {
+  padding: var(--spacing-4);
+}
+
+.essential-info-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: var(--surface);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow);
+}
+
+.info-section {
+  margin-bottom: var(--spacing-6);
+}
+
+.info-section:last-child {
+  margin-bottom: 0;
+}
+
+.info-section h2 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-4);
+  font-size: 1.25rem;
+}
+
+/* Links Grid */
+.links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
+}
+
+.link-card {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--spacing-4);
+  background: var(--background);
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.link-icon {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-right: var(--spacing-4);
+  flex-shrink: 0;
+}
+
+.link-content h3 {
+  color: var(--primary);
+  margin: 0 0 var(--spacing-2);
+  font-size: 1.1rem;
+}
+
+.link-content p {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Lists */
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-section li {
+  padding: var(--spacing-2) 0;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.info-section li:last-child {
+  border-bottom: none;
+}
+
+.contact-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-list li strong {
+  color: var(--text);
+}
+
+@media (min-width: 768px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .essential-info {
+    padding: var(--spacing-3);
+  }
+
+  .essential-info-container {
+    padding: var(--spacing-4);
+  }
+
+  .info-section {
+    margin-bottom: var(--spacing-4);
+  }
+
+  .link-card {
+    padding: var(--spacing-3);
+  }
+}

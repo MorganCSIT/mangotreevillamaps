@@ -1,5 +1,5 @@
 import React from "react";
-import BookTaxiButton from "./BookTaxiButton";
+import { Link } from "react-router-dom";
 
 const Article = ({ article }) => {
   if (!article) return null;
@@ -8,11 +8,10 @@ const Article = ({ article }) => {
     <div className="article">
       <p>
         <em>
-          Looking to book a taxi?
-          <br></br>
-          <a href="#bottom" className="scroll-link">
-            Click here!
-          </a>
+          Looking to book a taxi?{" "}
+          <Link to="/taxi-service" className="taxi-link">
+            Click here to book your ride!
+          </Link>
         </em>
       </p>
 
@@ -21,22 +20,6 @@ const Article = ({ article }) => {
       <p>
         <em>Updated on: {article.dateUpdated}</em>
       </p>
-      {/* 
-      {article.links &&
-        article.links.map((link, index) => (
-          <a
-            key={index}
-            href={link.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {link.text}
-          </a>
-        ))} */}
-
-      <div id="bottom"></div>
-
-      <BookTaxiButton />
     </div>
   );
 };
