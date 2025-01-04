@@ -1,14 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoMenu, IoClose } from 'react-icons/io5';
 import './Header.css';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const menuRef = useRef(null);
+  const buttonRef = useRef(null);
 
   useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, []);
+    const handleClickOutside = (event) => {
+      if (isMobileMenuOpen && 
+          menuRef.current && 
+          !menuRef.current.contains(event.target) &&
+          !buttonRef.current.contains(event.target)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMobileMenuOpen]);
 
   const handleLinkClick = () => {
     setIsMobileMenuOpen(false);
@@ -22,6 +34,7 @@ const Header = () => {
         </NavLink>
         
         <button 
+          ref={buttonRef}
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
@@ -29,7 +42,10 @@ const Header = () => {
           {isMobileMenuOpen ? <IoClose /> : <IoMenu />}
         </button>
 
-        <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+        <div 
+          ref={menuRef}
+          className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}
+        >
           <NavLink 
             to="/map/1" 
             className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
