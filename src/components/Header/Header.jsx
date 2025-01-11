@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
-import { IoMenu, IoClose } from 'react-icons/io5';
-import './Header.css';
+import React, { useState, useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
+import { IoMenu, IoClose } from "react-icons/io5";
+import "./Header.css";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,16 +10,18 @@ const Header = () => {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (isMobileMenuOpen && 
-          menuRef.current && 
-          !menuRef.current.contains(event.target) &&
-          !buttonRef.current.contains(event.target)) {
+      if (
+        isMobileMenuOpen &&
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !buttonRef.current.contains(event.target)
+      ) {
         setIsMobileMenuOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isMobileMenuOpen]);
 
   const handleLinkClick = () => {
@@ -32,8 +34,8 @@ const Header = () => {
         <NavLink to="/essential-info" className="nav-logo">
           Mango Tree Villa
         </NavLink>
-        
-        <button 
+
+        <button
           ref={buttonRef}
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -42,42 +44,56 @@ const Header = () => {
           {isMobileMenuOpen ? <IoClose /> : <IoMenu />}
         </button>
 
-        <div 
+        <div
           ref={menuRef}
-          className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}
+          className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}
         >
-          <NavLink 
-            to="/map/1" 
-            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+          <NavLink
+            to="/map/1"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             onClick={handleLinkClick}
           >
             Island Map Guide
           </NavLink>
-          <NavLink 
-            to="/activities" 
-            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+          <NavLink
+            to="/activities"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             onClick={handleLinkClick}
           >
             Activities
           </NavLink>
-          <NavLink 
-            to="/taxi-service" 
-            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+          <NavLink
+            to="/taxi-service"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             onClick={handleLinkClick}
           >
             Transport
           </NavLink>
-          <NavLink 
-            to="/faq" 
-            className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`}
+          <NavLink
+            to="/faq"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             onClick={handleLinkClick}
           >
             FAQ
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={handleLinkClick}
+          >
+            Blog
+          </NavLink>
+          <NavLink
+            to="/home"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={handleLinkClick}
+          >
+            Home
           </NavLink>
         </div>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
