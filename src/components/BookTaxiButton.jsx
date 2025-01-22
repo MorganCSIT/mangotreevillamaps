@@ -18,7 +18,7 @@ const BookTaxiButton = () => {
         .join("-");
     }
     const message = `
-
+How much would this cost?
 Name
 - ${name}
 
@@ -34,9 +34,9 @@ Destination
 Note
 - ${note} 
 
-How much would this cost?`;
+`;
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/+66810851211?text=${encodedMessage}`;
+    const whatsappUrl = `https://wa.me/+66620527020?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
   };
 

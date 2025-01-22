@@ -1,27 +1,28 @@
-import React, { useState } from 'react';
-import ProfilePicture from '../ProfilePicture';
+import React, { useState } from "react";
+import ProfilePicture from "../ProfilePicture";
 
 const TaxiBookingForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    pickupDate: '',
-    pickupTime: '',
-    pickupPoint: '',
-    destination: '',
-    note: ''
+    name: "",
+    pickupDate: "",
+    pickupTime: "",
+    pickupPoint: "",
+    destination: "",
+    note: "",
   });
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, pickupDate, pickupTime, pickupPoint, destination, note } = formData;
-    
+    const { name, pickupDate, pickupTime, pickupPoint, destination, note } =
+      formData;
+
     const message = `
 Name
 - ${name}
@@ -41,7 +42,7 @@ Note
 How much would this cost?`;
 
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/+66810851211?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/+66810851211?text=${encodedMessage}`, "_blank");
   };
 
   return (
@@ -76,7 +77,6 @@ How much would this cost?`;
               name="pickupDate"
               value={formData.pickupDate}
               onChange={handleChange}
-              required
               className="form-input"
             />
           </div>
@@ -89,7 +89,6 @@ How much would this cost?`;
               name="pickupTime"
               value={formData.pickupTime}
               onChange={handleChange}
-              required
               className="form-input"
             />
           </div>
@@ -103,7 +102,6 @@ How much would this cost?`;
             name="pickupPoint"
             value={formData.pickupPoint}
             onChange={handleChange}
-            required
             className="form-input"
           />
         </div>
@@ -117,6 +115,18 @@ How much would this cost?`;
             value={formData.destination}
             onChange={handleChange}
             required
+            className="form-input"
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="pax">Pax (number of people)</label>
+          <input
+            type="number"
+            id="pax"
+            name="pax"
+            value={formData.pax}
+            onChange={handleChange}
             className="form-input"
           />
         </div>
