@@ -70,18 +70,19 @@ export const faqData = [
   {
     question: "Can you help arrange local tours and activities?",
     answer:
-      "Absolutely! We have partnerships with several reputable tour operators. Whether you're looking to book island-hopping trips, snorkeling adventures, cooking classes, or cultural tours, feel free to let us know and we'll help coordinate your itinerary.",
+      "Absolutely! We have partnerships with several reputable tour operators. Whether you're looking to book island-hopping trips, snorkeling adventures, cooking classes, or cultural tours, feel free to let us know and we'll help coordinate your itinerary. You can checkout the acitivies section of this website for more information.",
   },
   {
     question: "Are there grocery stores or markets nearby?",
     answer:
-      "Yes, there are local convenience stores a short walk away, including a 7-Eleven and a Tops Daily minimart. For fresh produce and a more local experience, you can visit the nearby street markets to stock up on fruits, vegetables, and snacks.",
+      "Yes! Just up the road, there's a 7-Eleven and a Tops Daily minimart, both open 24/7—convenient if you need quick essentials at any time. For local produce and fresh fish, head to Ban Bae Market from 4:00 PM to 8:00 PM. If you're looking for a more extensive shopping experience, the Naka Weekend Market (open Saturdays and Sundays) and the Chilva Market (open during the week) are both about a 25-minute drive away. Most local restaurants open around 10:00 AM and close by 10:00 PM, and we often recommend 7-Eleven as a handy spot for coffee or a quick breakfast.",
   },
   {
     question: "What are some must-see attractions around Ao Yon and Phuket?",
     answer:
-      "Aside from the pristine Ao Yon Beach, you can explore Panwa Cape, visit the stunning views at Khao Khad Viewpoint, or stroll through Old Phuket Town with its vibrant Sino-Portuguese architecture. If you’re into nature, consider a day trip to the Big Buddha, or venture further for famous spots like Patong Beach, Kata Beach, and the many nearby islands.",
+      "In addition to Ao Yon’s relaxing beach vibes, exploring the local markets can be a cultural highlight. The Naka Weekend Market (open Saturday and Sunday) and Chilva Market (open on weekdays) are both around 25 minutes away and are great places to try street food, shop for souvenirs, and experience Phuket’s lively atmosphere. If you prefer something closer, Ban Bae Market (open from 4:00 PM to 8:00 PM) is a more intimate option for fresh fish and produce. Of course, you can also enjoy scenic viewpoints like Panwa Cape or Khao Khad Viewpoint, and if you venture into Old Phuket Town, you’ll find stunning Sino-Portuguese architecture, local cafés, and unique boutique shops.",
   },
+
   {
     question: "How is the local weather and what should I pack?",
     answer:
@@ -92,11 +93,7 @@ export const faqData = [
     answer:
       "Renting a car can be convenient if you plan to explore more remote areas of Phuket at your own pace. However, local traffic can be challenging if you're not used to driving on the left side of the road. For shorter or occasional trips, ride-hailing apps and taxis might be simpler.",
   },
-  {
-    question: "Do you offer assistance if we have special requests or needs?",
-    answer:
-      "Yes, we pride ourselves on local hospitality. If you require assistance with anything—dietary restrictions, mobility needs, or special celebrations—feel free to reach out. We’ll do our best to accommodate or guide you to the right resources.",
-  },
+
   {
     question: "Where can I find water sports equipment rental near Ao Yon?",
     answer:
@@ -110,34 +107,25 @@ export const faqData = [
   {
     question: "Are there street food stalls or night markets nearby?",
     answer:
-      "Phuket is famous for its night markets and street food culture. While Ao Yon is more tranquil, you can find local food stalls just a short drive away in Phuket Town or near Panwa. These markets are perfect for trying authentic Thai dishes at wallet-friendly prices.",
+      "Phuket is famous for its night markets and street food culture. While Ao Yon is more tranquil, you can find local food stalls just a short drive away in Phuket Town or near Panwa aquarium past 5p are perfect for trying authentic Thai dishes at wallet-friendly prices.",
   },
-  {
-    question: "Can we host a small gathering or event at the villa?",
-    answer:
-      "Yes, small gatherings are welcome as long as they respect our quiet hours policy (10 PM to 8 AM). If you plan to host a celebration, please let us know in advance so we can help ensure everything goes smoothly.",
-  },
+
   {
     question: "Is there a local bus service (Songthaew) we can use?",
     answer:
       "Phuket’s local open-air buses, known as Songthaews, operate on a few main routes, but they may not pass directly through Ao Yon. They typically run between major beaches and Phuket Town. If convenience is key, we recommend using a taxi or ride-hailing app.",
   },
-  {
-    question:
-      "Are there any hidden beaches or nature spots to explore near Ao Yon?",
-    answer:
-      "Yes! Along the southeast coastline, you'll find smaller coves and lesser-visited beaches. We recommend renting a scooter or car to take a leisurely coastal drive, stopping at viewpoints and exploring local spots away from the usual tourist areas.",
-  },
+
   {
     question: "Can we go snorkeling or diving near Ao Yon?",
     answer:
-      "Ao Yon itself is quite calm and suitable for light snorkeling, especially near the rocky edges. For more vibrant coral and sea life, consider day trips to nearby islands like Coral Island, Racha Yai, or Mai Thon. We can help you arrange snorkeling or diving tours with reputable operators.",
+      "Ao Yon itself is quite calm and suitable for light snorkeling, especially near the rocky edges. For more vibrant coral and sea life, consider day trips to nearby islands like Coral Island, Racha Yai, or Mai Thon. We can help you arrange snorkeling tours with reputable operators.",
   },
   {
     question:
       "Is there a supermarket for buying groceries or cooking supplies?",
     answer:
-      "Yes, just a short drive away you’ll find larger supermarkets like Makro, Tesco Lotus, or Big C. For fresh produce, local markets are a great option. Our villa’s kitchen is equipped for basic cooking needs, so feel free to make use of it for preparing meals.",
+      "Yes, just a 20min drive away you’ll find larger supermarkets like Villa market, Makro, Tesco Lotus, or Big C. For fresh produce, local markets are a great option. Our villa’s kitchen is equipped for basic cooking needs, so feel free to make use of it for preparing meals.",
   },
   {
     question: "What cultural attractions are close by?",
@@ -149,21 +137,13 @@ export const faqData = [
     answer:
       "Certainly! If your flight or departure plans extend beyond our check-out time, we’re happy to store your luggage in a secure area while you continue to enjoy the pool or explore nearby attractions for the day.",
   },
-  {
-    question: "What local coffee shops or cafés do you recommend?",
-    answer:
-      "Phuket has a vibrant café culture. Near Ao Yon, you’ll find cozy beachside cafés offering great coffee, fresh pastries, and even local Thai desserts. If you venture further into Phuket Town, there are trendy spots featuring specialty coffee roasters and unique décor.",
-  },
+
   {
     question: "Can we pay with credit card everywhere?",
     answer:
       "Major tourist-oriented establishments, supermarkets, and many restaurants do accept credit cards (Visa, MasterCard). However, smaller local shops, street food stalls, and markets may only take cash. We advise carrying some Thai Baht for convenience.",
   },
-  {
-    question: "How do we find reputable massage or spa services?",
-    answer:
-      "Thailand is famous for its massages. You’ll find both local, budget-friendly massage shops and high-end spas in the area. For a reliable recommendation, simply ask us! We can suggest a few places that maintain good hygiene and quality service.",
-  },
+
   {
     question: "Are there any local tips for bargaining at markets?",
     answer:
@@ -182,7 +162,7 @@ export const faqData = [
   {
     question: "How can I stay up to date on local events or happenings?",
     answer:
-      "There are several Facebook groups and local websites dedicated to Phuket events, night markets, and festival schedules. We also keep an eye on what’s going on and can pass along recommendations for unique local experiences or cultural festivals.",
+      "There are several Facebook groups and local websites dedicated to Phuket events, night markets, and festival schedules. ",
   },
   {
     question: "Is travel insurance recommended?",
@@ -192,11 +172,11 @@ export const faqData = [
   {
     question: "What if we arrive late at night?",
     answer:
-      "We can accommodate late check-ins with prior notice. Just let us know your arrival time, and we’ll arrange to meet you with keys and basic orientation, even if it’s after our usual check-in hours.",
+      "We can accommodate late check-ins with prior notice, using our neighbor taxi is mandatory at night, checkin usually closes at 10pm. Just let us know your arrival time, and we’ll arrange you to book our taxi neighbor Mr. A to meet you and provide access to your room.",
   },
   {
     question: "How do we contact you during our stay?",
     answer:
-      "You can reach us via phone, messaging apps, or simply knock on our door if you see us around. We’re here to help, whether you need tips for local dining spots or have any concerns during your stay.",
+      "You can reach us via phone, messaging apps, We’re here to help, whether you need tips for local dining spots or have any concerns during your stay.",
   },
 ];
