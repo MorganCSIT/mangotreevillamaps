@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const FAQSearch = ({ searchQuery, onSearchChange }) => {
   return (
@@ -7,7 +7,7 @@ const FAQSearch = ({ searchQuery, onSearchChange }) => {
         type="text"
         value={searchQuery}
         onChange={(e) => onSearchChange(e.target.value)}
-        placeholder="What time is check-in?"
+        placeholder="Use Keywords to Search"
         className="faq-search-input"
       />
     </div>

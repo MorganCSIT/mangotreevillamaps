@@ -73,6 +73,11 @@
   color: var(--primary);
 }
 
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Blog Post Page */
 .blog-post-container {
   max-width: 800px;
@@ -113,6 +118,53 @@
   color: var(--text);
   max-width: 680px; /* Added max-width for better readability */
   margin: 0 auto;
+}
+
+.back-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.back-button:hover {
+  background: var(--primary-dark);
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-post-meta {
+    max-width: 100%;
+  }
+
+  .blog-post-content {
+    max-width: 100%;
+  }
 }
 
 /* Rest of the CSS remains the same */

@@ -34,7 +34,7 @@
 }
 
 .faq-search input {
-  width: 100%;
+  width: 90%;
   padding: var(--spacing-3) var(--spacing-4);
   border: 2px solid var(--border-color);
   border-radius: var(--border-radius);

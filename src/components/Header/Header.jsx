@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav-container">
-        <NavLink to="/essential-info" className="nav-logo">
+        <NavLink to="/home" className="nav-logo">
           Mango Tree Villa
         </NavLink>
 
@@ -48,6 +48,13 @@ const Header = () => {
           ref={menuRef}
           className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}
         >
+          <NavLink
+            to="/essential-info"
+            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
+            onClick={handleLinkClick}
+          >
+            Links
+          </NavLink>
           <NavLink
             to="/map/1"
             className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
@@ -82,13 +89,6 @@ const Header = () => {
             onClick={handleLinkClick}
           >
             Blog
-          </NavLink>
-          <NavLink
-            to="/home"
-            className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
-            onClick={handleLinkClick}
-          >
-            Home
           </NavLink>
         </div>
       </nav>

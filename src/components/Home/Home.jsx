@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   FaMapMarkedAlt,
-  FaPhone,
+  FaTaxi,
   FaUmbrellaBeach,
   FaInfoCircle,
 } from "react-icons/fa";
@@ -12,32 +12,34 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      {/* <div className="hero">
+      <div className="hero">
         <div className="hero-content">
           <h1>Welcome to Mango Tree Villa</h1>
           <p>Your perfect getaway in the heart of Phuket</p>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="quick-links">
+      <div className="quick-links">
         <Link to="/map/1" className="quick-link-card">
           <FaMapMarkedAlt className="card-icon" />
           <h2>Area Guide</h2>
-          <p>Discover local attractions, restaurants, and essential services</p>
+          <p>Discover Phuket using catergorized maps</p>
         </Link>
 
         <Link to="/taxi-service" className="quick-link-card">
-          <FaPhone className="card-icon" />
+          <FaTaxi className="card-icon" />
           <h2>Transportation</h2>
-          <p>Book reliable transportation with our trusted local driver</p>
+          <p>
+            Book reliable transportation with our trusted neighbor taxi drivers
+          </p>
         </Link>
 
         <Link to="/activities" className="quick-link-card">
           <FaUmbrellaBeach className="card-icon" />
           <h2>Activities</h2>
-          <p>Explore exciting activities and experiences in Phuket</p>
+          <p>Explore exciting activities and experiences in or around Phuket</p>
         </Link>
-      </div> */}
+      </div>
 
       <EssentialInfo />
 

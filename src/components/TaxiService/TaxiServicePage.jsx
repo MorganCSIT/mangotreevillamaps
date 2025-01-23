@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import TaxiBookingForm from './TaxiBookingForm';
-import RatesModal from './RatesModal';
-import './TaxiService.css';
+import React, { useState } from "react";
+import TaxiBookingForm from "./TaxiBookingForm";
+import RatesModal from "./RatesModal";
+import "./TaxiService.css";
 
 const TaxiServicePage = () => {
   const [isRatesModalOpen, setRatesModalOpen] = useState(false);
@@ -12,12 +12,14 @@ const TaxiServicePage = () => {
         <section className="taxi-info-section">
           <h1>Mr. A's Taxi Service</h1>
           <p className="service-description">
-            Welcome to our trusted taxi service in Phuket. We provide reliable, comfortable 
-            transportation with experienced English-speaking drivers who know the island inside out. 
-            Whether you need an airport transfer, a day tour, or just a quick ride, we're here to 
-            ensure your journey is safe and pleasant.
+            Our trusted neighbor taxi provides reliable, comfortable
+            transportation. Whether you need an airport transfer, a day package,
+            or just a quick ride, our neighbor can arrange a taxi for you. We
+            advise you to book in advance to avoid waiting. Other transport
+            options can be found on popular ride-hailing apps like Grab, Bolt,
+            or Indrive.
           </p>
-          <button 
+          <button
             className="view-rates-button"
             onClick={() => setRatesModalOpen(true)}
           >
@@ -30,9 +32,9 @@ const TaxiServicePage = () => {
           <TaxiBookingForm />
         </section>
 
-        <RatesModal 
-          isOpen={isRatesModalOpen} 
-          onClose={() => setRatesModalOpen(false)} 
+        <RatesModal
+          isOpen={isRatesModalOpen}
+          onClose={() => setRatesModalOpen(false)}
         />
       </div>
     </div>

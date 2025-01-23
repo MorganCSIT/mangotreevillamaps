@@ -1,10 +1,11 @@
-import React from 'react';
-import { useParams, Navigate } from 'react-router-dom';
-import { blogPosts } from './blogData';
-import './Blog.css';
+import React from "react";
+import { useParams, Navigate, useNavigate } from "react-router-dom";
+import { blogPosts } from "./blogData";
+import "./Blog.css";
 
 const BlogPost = () => {
   const { postId } = useParams();
+  const navigate = useNavigate();
   const post = blogPosts.find((p) => p.id === postId);
 
   if (!post) {
@@ -13,6 +14,9 @@ const BlogPost = () => {
 
   return (
     <div className="blog-post-container">
+      <span onClick={() => navigate(-1)} className="back-link styled-back-link">
+        ← Back
+      </span>
       <div className="blog-post-header">
         <img src={post.imageUrl} alt={post.title} className="blog-post-image" />
         <div className="blog-post-meta">
@@ -25,9 +29,10 @@ const BlogPost = () => {
           </div>
         </div>
       </div>
-      <div className="blog-post-content">
-        {post.content}
-      </div>
+      <div className="blog-post-content">{post.content}</div>
+      <span onClick={() => navigate(-1)} className="back-link styled-back-link">
+        ← Back
+      </span>
     </div>
   );
 };
