@@ -55,7 +55,7 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "3 Island Trip (He, Lon, Thana)",
+    title: "Private Long-Tail Boat: 3 Island Trip (He, Lon, Thana)",
     description: "Snorkeling + diving behind the island + Banana Beach",
     price: "3500 THB",
     time: "Flexible",
@@ -63,7 +63,7 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "4 Island Trip (Thanaan, Lon, Bon, Hey)",
+    title: "Private Long-Tail Boat: 4 Island Trip (Thanaan, Lon, Bon, Hey)",
     description: "Snorkeling + diving behind Koh Hey + Banana Beach",
     price: "5000 THB",
     time: "Flexible",
@@ -71,7 +71,8 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Island Tour & Squid Diving (Koh Hey + Koh El)",
+    title:
+      "Private Long-Tail Boat: Island Tour & Squid Diving (Koh Hey + Koh El)",
     description:
       "Banana Beach + Snorkeling behind the island + Fresh sashimi on the boat",
     price: "5000 THB",
@@ -80,7 +81,7 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Koh Mai Thon + Snorkeling",
+    title: "Private Long-Tail Boat: Koh Mai Thon + Snorkeling",
     description: "Explore the crystal waters of Koh Mai Thon",
     price: "5000 THB",
     time: "Flexible",
@@ -88,7 +89,8 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Koh Mai Thon + Koh Hey (Banana Beach) Snorkeling",
+    title:
+      "Private Long-Tail Boat: Koh Mai Thon + Koh Hey (Banana Beach) Snorkeling",
     description: "Snorkeling at Koh Mai Thon + Banana Beach on Koh Hey",
     price: "6000 THB",
     time: "Flexible",
@@ -96,7 +98,8 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Trip to Egg Outer + Egg Inner (Cat Egg) + Egg Nui + Snorkeling",
+    title:
+      "Private Long-Tail Boat: Trip to Egg Outer + Egg Inner (Cat Egg) + Egg Nui + Snorkeling",
     description:
       "Discover the beautiful Egg islands and enjoy snorkeling experiences",
     price: "6000 THB",
@@ -105,7 +108,8 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Koh Racha Yai + Snorkeling + Koh He (Banana Beach)",
+    title:
+      "Private Long-Tail Boat: Koh Racha Yai + Snorkeling + Koh He (Banana Beach)",
     description:
       "Visit Koh Racha Yai for snorkeling then enjoy Banana Beach at Koh He",
     price: "6500 THB",
@@ -114,7 +118,7 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Khai Islands + Mai Ton Snorkeling",
+    title: "Private Long-Tail Boat: Khai Islands + Mai Ton Snorkeling",
     description:
       "Khai Nok, Khai Nai, Khai Nui, plus Mai Ton Island snorkeling adventure",
     price: "8000 THB",
@@ -123,7 +127,7 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Night Squid Fishing Trip",
+    title: "Private Long-Tail Boat: Night Squid Fishing Trip",
     description:
       "Catch squid and enjoy fresh sashimi on the boat around Koh Hey and Koh El (weather permitting)",
     price: "5000 THB",
