@@ -10,7 +10,7 @@ const Article = ({ article }) => {
         <em>
           Looking to book a taxi?{" "}
           <Link to="/taxi-service" className="taxi-link">
-            Click here to book your ride!
+            Click to Inquire Taxi with Mr.A
           </Link>
         </em>
       </p>

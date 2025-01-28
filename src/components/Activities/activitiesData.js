@@ -127,7 +127,7 @@ export const activities = [
     brochure: "",
   },
   {
-    title: "Private Long-Tail Boat: Night Squid Fishing Trip",
+    title: "Private Long-Tail Boat:  Night Squid Fishing Trip",
     description:
       "Catch squid and enjoy fresh sashimi on the boat around Koh Hey and Koh El (weather permitting)",
     price: "5000 THB",

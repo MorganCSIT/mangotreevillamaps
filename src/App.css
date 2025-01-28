@@ -13,3 +13,7 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
+.content-container {
+  padding: 2px; /* Adjust the value as needed */
+}

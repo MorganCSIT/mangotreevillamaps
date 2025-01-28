@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProfilePicture from "./ProfilePicture";
+
 const BookTaxiButton = () => {
   const [pickupPoint, setPickupPoint] = useState("");
   const [destination, setDestination] = useState("");
@@ -42,14 +43,7 @@ Note
 
   return (
     <div className="form-container">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          flexDirection: "column",
-        }}
-      >
+      <div className="profile-section">
         <div className="profile-picture-background">
           <ProfilePicture imageUrl="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/17/aa/42/my-job.jpg?w=500&h=-1&s=1" />
         </div>

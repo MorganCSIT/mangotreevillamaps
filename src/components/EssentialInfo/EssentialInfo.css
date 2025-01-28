@@ -10,7 +10,9 @@
   padding: var(--spacing-6);
   box-shadow: var(--shadow);
 }
-
+.header-title {
+  margin-top: 2px; /* Adjust the value as needed */
+}
 .info-section {
   margin-bottom: var(--spacing-6);
 }

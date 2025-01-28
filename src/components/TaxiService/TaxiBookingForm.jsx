@@ -63,7 +63,6 @@ How much would this cost?`;
             name="name"
             value={formData.name}
             onChange={handleChange}
-            required
             className="form-input"
           />
         </div>
@@ -114,7 +113,6 @@ How much would this cost?`;
             name="destination"
             value={formData.destination}
             onChange={handleChange}
-            required
             className="form-input"
           />
         </div>

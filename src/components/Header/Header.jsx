@@ -53,7 +53,7 @@ const Header = () => {
             className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             onClick={handleLinkClick}
           >
-            Links
+            Directory
           </NavLink>
           <NavLink
             to="/map/1"
