@@ -67,9 +67,7 @@ const EssentialInfo = () => {
         <header className="activities-header">
           <h1 className="header-title">Information Directory</h1>
           Here you will find a collection of useful links and information to
-          help you make the most of your stay. If you have any additional
-          questions or need further assistance, please do not hesitate to
-          contact us.
+          help you make the most of your stay.
           <p className="quote">
             "If you have any additional questions or need further assistance,
             please do not hesitate to contact us."
