@@ -73,7 +73,7 @@ const EssentialInfo = () => {
             please do not hesitate to contact us."
           </p>
         </header>
-        <h2>Useful Links</h2>
+
         <div className="links-grid">
           {links.map((link, index) => (
             <a
