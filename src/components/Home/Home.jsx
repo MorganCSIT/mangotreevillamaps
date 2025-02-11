@@ -15,7 +15,13 @@ const Home = () => {
       <div className="hero">
         <div className="hero-content">
           <h1>Mango Tree Villa</h1>
-          <p>Your perfect getaway in the heart of Phuket</p>
+          <p>Enjoying so far?</p>
+          <Link
+            to="https://mangotreevillaphuket.com/roomtypes.html"
+            className="hero-book-button"
+          >
+            Book Again!
+          </Link>
         </div>
       </div>
 
