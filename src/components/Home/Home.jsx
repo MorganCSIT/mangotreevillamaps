@@ -41,7 +41,7 @@ const Home = () => {
         </Link>
       </div>
 
-      <EssentialInfo />
+      {/* <EssentialInfo /> */}
 
       {/* <div className="welcome-section">
         <h2>About Our Villa</h2>
