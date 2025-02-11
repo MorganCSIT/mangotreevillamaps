@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
       <div className="hero">
         <div className="hero-content">
-          <h1>Welcome to Mango Tree Villa</h1>
+          <h1>Mango Tree Villa</h1>
           <p>Your perfect getaway in the heart of Phuket</p>
         </div>
       </div>

@@ -166,27 +166,5 @@
     max-width: 100%;
   }
 }
-/* .book-button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: var(--spacing-4);
-}
 
-.book-button {
-  background: var(--primary);
-  color: white;
-  padding: var(--spacing-3);
-  border: none;
-  border-radius: var(--border-radius);
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.2s ease;
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.book-button:hover {
-  background: var(--primary-dark);
-} */
+/* Rest of the CSS remains the same */
