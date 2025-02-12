@@ -9,6 +9,7 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  border-radius: 6px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -37,7 +38,7 @@
   color: white;
   padding: 12px 35px;
   border: 2px solid white;
-  border-radius: 25px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
   margin-top: 25px;
