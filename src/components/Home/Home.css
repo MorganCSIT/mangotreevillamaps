@@ -33,28 +33,27 @@
 
 .hero-book-button {
   display: inline-block;
-  background-color: #ff6b6b;
+  background-color: transparent;
   color: white;
-  padding: 15px 30px;
+  padding: 12px 35px;
+  border: 2px solid white;
   border-radius: 25px;
   text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
+  font-weight: 500;
+  margin-top: 25px;
   transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero-book-button:hover {
-  background-color: #ff5252;
+  background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  color: white;
 }
 
 .hero-book-button:active {
   transform: translateY(0);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 
 .quick-links {
@@ -63,7 +62,7 @@
   gap: var(--spacing-4);
   padding: var(--spacing-6);
   max-width: 1200px;
-  margin: -60px auto 0;
+  margin: -120px auto 0;
   position: relative;
 }
 

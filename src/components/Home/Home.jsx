@@ -26,6 +26,10 @@ const Home = () => {
       </div>
 
       <div className="quick-links">
+        <EssentialInfo />
+      </div>
+
+      {/* <div className="quick-links">
         <Link to="/map/1" className="quick-link-card">
           <FaMapMarkedAlt className="card-icon" />
           <h2>Area Guide</h2>
@@ -45,9 +49,7 @@ const Home = () => {
           <h2>Activities</h2>
           <p>Explore exciting activities and experiences in or around Phuket</p>
         </Link>
-      </div>
-
-      {/* <EssentialInfo /> */}
+      </div> */}
 
       {/* <div className="welcome-section">
         <h2>About Our Villa</h2>

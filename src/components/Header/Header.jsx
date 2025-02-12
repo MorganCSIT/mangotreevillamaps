@@ -31,7 +31,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav-container">
-        <NavLink to="/home" className="nav-logo">
+        <NavLink to="https://mangotreevillaphuket.com/" className="nav-logo">
           Mango Tree Villa
         </NavLink>
 
@@ -49,7 +49,7 @@ const Header = () => {
           className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}
         >
           <NavLink
-            to="/essential-info"
+            to="/Home"
             className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}
             onClick={handleLinkClick}
           >
