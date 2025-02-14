@@ -15,12 +15,12 @@ const Home = () => {
       <div className="hero">
         <div className="hero-content">
           <h1>Mango Tree Villa</h1>
-          <p>Enjoying so far?</p>
+          <p>Wish to book again?</p>
           <Link
             to="https://mangotreevillaphuket.com/roomtypes.html"
             className="hero-book-button"
           >
-            Book Again!
+            Check Availability
           </Link>
         </div>
       </div>
