@@ -52,7 +52,7 @@ export const activities = [
     price: "3000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title: "Private Long-Tail Boat: 3 Island Trip (He, Lon, Thana)",
@@ -60,7 +60,7 @@ export const activities = [
     price: "3500 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title: "Private Long-Tail Boat: 4 Island Trip (Thanaan, Lon, Bon, Hey)",
@@ -68,7 +68,7 @@ export const activities = [
     price: "5000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title:
@@ -78,7 +78,7 @@ export const activities = [
     price: "5000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title: "Private Long-Tail Boat: Koh Mai Thon + Snorkeling",
@@ -86,7 +86,7 @@ export const activities = [
     price: "5000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title:
@@ -95,7 +95,7 @@ export const activities = [
     price: "6000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title:
@@ -105,7 +105,7 @@ export const activities = [
     price: "6000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title:
@@ -115,7 +115,7 @@ export const activities = [
     price: "6500 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title: "Private Long-Tail Boat: Khai Islands + Mai Ton Snorkeling",
@@ -124,7 +124,7 @@ export const activities = [
     price: "8000 THB",
     time: "Flexible",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
   {
     title: "Private Long-Tail Boat:  Night Squid Fishing Trip",
@@ -133,6 +133,6 @@ export const activities = [
     price: "5000 THB",
     time: "Flexible (recommended 17:30 - 23:30)",
     icon: "fas fa-ship",
-    brochure: "",
+    brochure: "andaman.pdf",
   },
 ];
